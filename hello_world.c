@@ -1,6 +1,6 @@
 #include<stdio.h>
 main(){
 
-printf("\n First Commit of this program \n");
+printf("\n Second Commit of this program in Developer \n");
 
 }
