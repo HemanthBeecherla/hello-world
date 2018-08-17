@@ -1,17 +1,19 @@
 pipeline {
-    agent any
+    agent {
+       label 'test-openhpi-rhel75.telco'
+    }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-		make
+		sh 'make'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                ./helloworld
+                sh './helloworld'
             }
         }
     }
