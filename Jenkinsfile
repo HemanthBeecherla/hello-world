@@ -14,10 +14,5 @@ pipeline {
                 ./helloworld
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
     }
 }
